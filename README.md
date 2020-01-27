@@ -1,6 +1,6 @@
 # SoundcloudScrollingTranscript
 <a href="https://soundcloudtranscript.anthonyandroula.repl.co"><img src="https://github.com/AnthonyAndroulakis/SoundcloudScrollingTranscript/blob/master/screenshot.png" alt="screenshot" width="400" height="300"></a><br>
-Demo: https://repl.it/@AnthonyAndroula/soundcloudtranscript
+Simple implementation DEMO: https://repl.it/@AnthonyAndroula/soundcloudtranscript
 
 Slightly modified version of (changes: autoscrolling, some css changes, multi-line transcripts (see demo)):
 https://codepen.io/X-Raym/pen/QdwEgJ
@@ -9,9 +9,8 @@ Demo soundcloud song used: https://soundcloud.com/user-811313743/a-charlie-brown
 
 If you use this code, be sure to use an MIT license and cite this repo as well as https://codepen.io/X-Raym/pen/QdwEgJ.
 
-This is simple to implement on your website; check out the repl demo I've provided.
-
 # Transcript format (captions.en.csv)
+(https://github.com/AnthonyAndroulakis/SoundcloudScrollingTranscript/blob/master/captions.en.csv)     
 ```
 hh:mm:ss:decisecond; LENGTH    
 hh:mm:ss:decisecond; 1st words    
