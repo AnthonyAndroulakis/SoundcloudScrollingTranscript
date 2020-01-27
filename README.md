@@ -1,5 +1,5 @@
 # SoundcloudScrollingTranscript
-![screenshot](https://github.com/AnthonyAndroulakis/SoundcloudScrollingTranscript/blob/master/screenshot.png)
+<img src="https://github.com/AnthonyAndroulakis/SoundcloudScrollingTranscript/blob/master/screenshot.png" alt="screenshot" width="500" height="500">
 Demo: https://repl.it/@AnthonyAndroula/soundcloudtranscript
 
 Slightly modified version of (changes: autoscrolling, some css changes, multi-line transcripts (see demo)):
