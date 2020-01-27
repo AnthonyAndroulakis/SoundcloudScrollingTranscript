@@ -1,0 +1,17 @@
+.wavesurfer-transcript{
+  width: 600px;
+  height: 200px;
+  font-size: 17px;
+  position: absolute;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+}
+
+.wavesurfer-marker:hover {
+  cursor: pointer;
+  background-color: #c9f3f3;
+}
+
+.wavesurfer-marker-current {
+  background-color: #e2fbfb;
+}
