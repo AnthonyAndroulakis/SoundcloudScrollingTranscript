@@ -20,14 +20,15 @@ def run(filename): #example input: captions.en.csv
 
 	#create txt file with html-version of transcript
 	htmltext = '<h3 style="font-family:arial;"> Transcript: </h3>'
-	htmltext += '<div class="wavesurfer-transcript">' #ending = </div>
+	htmltext += '<div class="wavesurfer-transcript'+tracknum+'">' #ending = </div>
 	for i in range(len(data)-1): #look at i+1
 		if i==len(data)-2: #if at last element
-			htmltext += '<div class="wavesurfer-marker" data-start="'+str(seconds[i+1])+'" data-end="'+str(seconds[0])+'"> <table><tr><td>'+timeDisplay[i+1]+'&nbsp;&nbsp;</td> <td>'+words[i+1]+'</td></tr></table></div>'
+			htmltext += '<div class="wavesurfer-marker'+tracknum+'" data-start="'+str(seconds[i+1])+'" data-end="'+str(seconds[0])+'"> <table><tr><td>'+timeDisplay[i+1]+'&nbsp;&nbsp;</td> <td>'+words[i+1]+'</td></tr></table></div>'
 		else:
-			htmltext += '<div class="wavesurfer-marker" data-start="'+str(seconds[i+1])+'" data-end="'+str(seconds[i+2])+'"> <table><tr><td>'+timeDisplay[i+1]+'&nbsp;&nbsp;</td> <td>'+words[i+1]+'</td></tr></table></div>'
+			htmltext += '<div class="wavesurfer-marker'+tracknum+'" data-start="'+str(seconds[i+1])+'" data-end="'+str(seconds[i+2])+'"> <table><tr><td>'+timeDisplay[i+1]+'&nbsp;&nbsp;</td> <td>'+words[i+1]+'</td></tr></table></div>'
 
 	htmltext += '</div>'
+	htmltext += '<script>var MarkersInit=function(e){var r=document.querySelectorAll(".wavesurfer-marker'+tracknum+'");Array.prototype.forEach.call(r,function(r,t){var a=r.dataset.start,n=r.dataset.end,o=r.dataset.id;o>=1?o-=1:o=0,marker={},marker.time_start=a,marker.time_end=n,marker.dom=r,void 0===e[o]&&(e[o]=[]),e[o].push(marker)})};document.onreadystatechange=(()=>{if("complete"===document.readyState){var e=[];MarkersInit(e);var r=document.querySelector("iframe"),t=SC.Widget(r),a=document.querySelectorAll(".wavesurfer-marker'+tracknum+'");Array.prototype.forEach.call(a,function(e,r){e.onclick=function(){var r=1e3*e.dataset.start+1;t.seekTo(r)}}),t.bind(SC.Widget.Events.PLAY_PROGRESS,function(){t.getPosition(function(r){r/=1e3;e[0].forEach(function(e,t){r>=e.time_start&&r<=e.time_end?(e.dom.classList.add("wavesurfer-marker-current'+tracknum+'"),e.dom.scrollIntoView({block:"nearest"})):e.dom.classList.remove("wavesurfer-marker-current'+tracknum+'")})})})}});</script>'
 	open(filename[:-4]+'.sndcldtt','w').write(htmltext)
 
 run(sys.argv[1])
