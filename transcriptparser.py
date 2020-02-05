@@ -19,8 +19,7 @@ def run(filename): #example input: captions.en.csv
 		raise TranscriptError("LENGTH needs to be greater than last time mark.")
 
 	#create txt file with html-version of transcript
-	htmltext = '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/'+tracknum+'&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>'
-	htmltext += '<h3 style="font-family:arial;"> Transcript: </h3>'
+	htmltext = '<h3 style="font-family:arial;"> Transcript: </h3>'
 	htmltext += '<div class="wavesurfer-transcript">' #ending = </div>
 	for i in range(len(data)-1): #look at i+1
 		if i==len(data)-2: #if at last element
