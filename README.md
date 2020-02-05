@@ -25,5 +25,5 @@ hh:mm:ss:decisecond; 4th words
 ```
 
 # HtmlTranscriptGenerator (transcriptparser.py)
-Example run: `python3 transcriptparser.py captions.en.csv` output will be named captions.en.sndcldtt      
+Example run: `python3 transcriptparser.py captions.en.csv` output will be named 234629139.en.sndcldtt where 234629139 is the track number      
 Look at demo page to see where to paste this output.
