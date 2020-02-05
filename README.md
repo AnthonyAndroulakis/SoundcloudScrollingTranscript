@@ -25,5 +25,5 @@ hh:mm:ss:decisecond; 4th words
 ```
 
 # HtmlTranscriptGenerator (transcriptparser.py)
-Example run: `python3 transcriptparser.py captions.en.csv` output will be named captions.en.txt      
+Example run: `python3 transcriptparser.py captions.en.csv` output will be named captions.en.sndcldtt      
 Look at demo page to see where to paste this output.
