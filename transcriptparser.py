@@ -5,7 +5,7 @@ def run(filename): #example input: captions.en.csv
 	#first parse csv file for relevant data
 	lines = open(filename).read().split('\n')
 	data = [i.split(';') for i in lines][1:]
-	tracknum = lines[0].split(';')[0] #make tracknum id name in js
+	tracknum = lines[0].split(';')[0] #make tracknum id name in html and js
 	seconds = [[int(k) for k in j[0].split(':')][0]*3600+[int(k) for k in j[0].split(':')][1]*60+[int(k) for k in j[0].split(':')][2]+[int(k) for k in j[0].split(':')][3]*0.1 for j in data] #ignore first
 	words = [l[1] for l in data] #ignore first
 	timeDisplay = [m[0][:-2] for m in data]
