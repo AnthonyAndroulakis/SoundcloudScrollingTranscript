@@ -12,7 +12,7 @@ def run(filename): #example input: captions.en.csv
 
 	#check for any logic errors
 	class TranscriptError(Exception):
-    	pass
+    		pass
 
 	if seconds[0]<seconds[-1]:
 		raise TranscriptError("LENGTH needs to be greater than last time mark.")
