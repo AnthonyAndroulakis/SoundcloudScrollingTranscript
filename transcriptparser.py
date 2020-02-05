@@ -29,6 +29,6 @@ def run(filename): #example input: captions.en.csv
 
 	htmltext += '</div>'
 	htmltext += '<script>var MarkersInit=function(e){var r=document.querySelectorAll(".wavesurfer-marker'+tracknum+'");Array.prototype.forEach.call(r,function(r,t){var a=r.dataset.start,n=r.dataset.end,o=r.dataset.id;o>=1?o-=1:o=0,marker={},marker.time_start=a,marker.time_end=n,marker.dom=r,void 0===e[o]&&(e[o]=[]),e[o].push(marker)})};document.onreadystatechange=(()=>{if("complete"===document.readyState){var e=[];MarkersInit(e);var r=document.querySelector("iframe"),t=SC.Widget(r),a=document.querySelectorAll(".wavesurfer-marker'+tracknum+'");Array.prototype.forEach.call(a,function(e,r){e.onclick=function(){var r=1e3*e.dataset.start+1;t.seekTo(r)}}),t.bind(SC.Widget.Events.PLAY_PROGRESS,function(){t.getPosition(function(r){r/=1e3;e[0].forEach(function(e,t){r>=e.time_start&&r<=e.time_end?(e.dom.classList.add("wavesurfer-marker-current'+tracknum+'"),e.dom.scrollIntoView({block:"nearest"})):e.dom.classList.remove("wavesurfer-marker-current'+tracknum+'")})})})}});</script>'
-	open(filename[:-4]+'.html','w').write(htmltext)
+	open(tracknum+'.html','w').write(htmltext)
 
 run(sys.argv[1])
