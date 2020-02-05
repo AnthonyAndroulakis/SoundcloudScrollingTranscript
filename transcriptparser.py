@@ -28,6 +28,6 @@ def run(filename): #example input: captions.en.csv
 			htmltext += '<div class="wavesurfer-marker" data-start="'+str(seconds[i+1])+'" data-end="'+str(seconds[i+2])+'"> <table><tr><td>'+timeDisplay[i+1]+'&nbsp;&nbsp;</td> <td>'+words[i+1]+'</td></tr></table></div>'
 
 	htmltext += '</div>'
-	open(filename[:-4]+'.txt','w').write(htmltext)
+	open(filename[:-4]+'.sndcldtt','w').write(htmltext)
 
 run(sys.argv[1])
