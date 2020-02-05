@@ -13,6 +13,7 @@ If you use this code, be sure to use an MIT license and cite this repo as well a
 # Transcript format (captions.en.csv)
 (https://github.com/AnthonyAndroulakis/SoundcloudScrollingTranscript/blob/master/captions.en.csv)     
 ```
+tracknumber; TRACK
 hh:mm:ss:decisecond; LENGTH    
 hh:mm:ss:decisecond; 1st words    
 hh:mm:ss:decisecond; 2nd words    
