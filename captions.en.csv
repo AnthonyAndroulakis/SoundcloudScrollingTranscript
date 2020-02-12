@@ -1,5 +1,6 @@
-234629139; TRACK
-00:02:41:0; LENGTH
+TRACK; 234629139
+DESCRIPTION; A Charlie Brown Christmas - Christmastime is Here
+LENGTH; 00:02:41:0
 00:00:00:0; [Intro]
 00:00:09:0; Christmas time is here
 00:00:13:5; Happiness and cheer
