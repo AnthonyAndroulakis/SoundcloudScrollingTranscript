@@ -1,4 +1,5 @@
 # SoundcloudScrollingTranscript
+this is an old version, don't refer to this
 <a href="https://soundcloudtranscript.anthonyandroula.repl.co"><img src="https://github.com/AnthonyAndroulakis/SoundcloudScrollingTranscript/blob/master/screenshot.png" alt="screenshot" width="400" height="300"></a><br>
 Simple implementation DEMO:  https://github.com/AnthonyAndroulakis/anthonyandroulakis.github.io/tree/master/soundcloudtranscript         
 Slightly ornamented version: https://repl.it/@AnthonyAndroula/soundcloudtranscript
